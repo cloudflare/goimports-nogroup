@@ -21,20 +21,7 @@ import (
 
 // importToGroup is a list of functions which map from an import path to
 // a group number.
-var importToGroup = []func(importPath string) (num int, ok bool){
-	func(importPath string) (num int, ok bool) {
-		if strings.HasPrefix(importPath, "appengine") {
-			return 2, true
-		}
-		return
-	},
-	func(importPath string) (num int, ok bool) {
-		if strings.Contains(importPath, ".") {
-			return 1, true
-		}
-		return
-	},
-}
+var importToGroup = []func(importPath string) (num int, ok bool){}
 
 func importGroup(importPath string) int {
 	for _, fn := range importToGroup {
