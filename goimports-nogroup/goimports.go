@@ -17,7 +17,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/FiloSottile/goimports-nogroup/imports"
+	"github.com/cloudflare/goimports-nogroup/imports"
 )
 
 var (
