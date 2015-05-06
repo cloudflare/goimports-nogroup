@@ -1,5 +1,5 @@
 A patched goimports that does not divide imports into groups.
 
-(Emptied importToGroup in imports/fix.go)
+(Emptied importToGroup in imports/fix.go from golang.org/x/tools/imports)
 
 go get github.com/FiloSottile/goimports-nogroup/goimports-nogroup
